@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="reset.css" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Antra uzduotis</title>
+</head>
+
+<body>
+  <div class="forma">
+
+    <form action="https://formspree.io/f/xrgdrrqn" method="POST">
+      <h1>Payment Form</h1>
+      <p>Required fields are followed by *</p>
+      <form action=".index.html" method="post">
+        <h2>Contact information</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>
+                <fieldset>
+                  <legend>Title</legend>
+                  <input type="radio" id="Mister" name="radio" value="Mister">
+                  <label for="Mister">Mister</label><br>
+                  <input type="radio" id="Miss" name="radio" value="Miss">
+                  <label for="Miss">Miss</label>
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">Name:*</label>
+              </td>
+              <td>
+                <input type="name" id="name" name="Vardas" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">E-mail:*</label>
+              </td>
+              <td>
+                <input type="email" id="email" name="Emailas" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pass">Password:*</label>
+              </td>
+              <td>
+                <input type="password" id="password" name="Slaptazodis" required>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Payment information</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label for="Kortele"> Card type:</label>
+              </td>
+              <td>
+                <select name="Kortele" id="select">
+                  <option value="Visa">Visa</option>
+                  <option value="mastercard">MasterCard</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="text"> Card number:*</label>
+              </td>
+              <td>
+                <input type="text" id="number" name="Kort numeris" minlength="16" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="text">Expiration date:*</label>
+              </td>
+              <td>
+                <input type="text" id="date" name="Kortelės galiojimas" required>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" formmethod="post">Validate the Payment</button>
+        <button class="kitas-butons" type="reset">istrinti viska</button>
+      </form>
+  </div>
+</body>
+
+</html>
